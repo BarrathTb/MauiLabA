@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <StackLayout BackgroundColor="#F5F5F5" Padding="20">
+
+        <Frame
+            CornerRadius="15"
+            BackgroundColor="#FFFFFF"
+            HasShadow="True">
+
+            <StackLayout Spacing="20">
+
+                <Image
+                    Source="dotnet_bot.png"
+                    HeightRequest="200"
+                    HorizontalOptions="Center" />
+
+
+                
+                    
+
+                        <Entry x:Name="StartNum"
+                           Placeholder="Start counter"
+                           Keyboard="Numeric" />
+                    
+                
+                <Label
+                    x:Name="Output"
+                    Text="Count Stuff"
+                    FontSize="28"
+                    TextColor="#333"
+                    HorizontalOptions="Center" />
+
+                <Button
+                    x:Name="CounterBtn"
+                    Text="Click me"
+                    BackgroundColor="#007AFF"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="10"
+                    Clicked="OnCounterClicked"
+                    HorizontalOptions="Center" />
+
+            </StackLayout>
+
+        </Frame>
+
+    </StackLayout>
+
+</ContentPage>
+
+
+
+    
+    
